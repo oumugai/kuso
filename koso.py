@@ -2,7 +2,7 @@ import json
 import websocket
 from numba import autojit
 
-ws = websocket.create_connection("wss://saiyo2019.moi.st/websocket/42db11423e45481bafd02915487396c6")
+ws = websocket.create_connection()
 
 ws.send(json.dumps({
     "signal": "start"
